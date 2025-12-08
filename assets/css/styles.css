@@ -3,6 +3,14 @@ body {
     background-image: url("../images/01-02-02_background-img.jpg");
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: clamp(160px, 35vw, 480px); /* min, preferred (viewport), max */
+}
+
 p {
     font-weight: bold;
 }
@@ -10,3 +18,4 @@ p {
 .text-center {
     text-align: center;
 }
+
