@@ -1,15 +1,27 @@
 body {
     background-color: lightgrey;
     background-image: url("../images/01-02-02_background-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;      /* scales to fill viewport while keeping aspect */
+    background-attachment: scroll;/* better on mobile; will scale with window */
+    min-height: 100vh;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    width: clamp(160px, 35vw, 480px); /* min, preferred (viewport), max */
+/* keep fixed parallax only on large desktops */
+@media (min-width: 1200px) {
+    body {
+        background-attachment: fixed;
+    }
 }
+
+/* Optional: if you prefer the whole image visible (may leave empty space) */
+/*
+body {
+    background-size: contain;
+    background-position: center top;
+}
+*/
 
 p {
     font-weight: bold;
