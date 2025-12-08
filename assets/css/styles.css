@@ -15,13 +15,12 @@ body {
     }
 }
 
-/* Optional: if you prefer the whole image visible (may leave empty space) */
-/*
+
 body {
     background-size: contain;
     background-position: center top;
 }
-*/
+
 
 p {
     font-weight: bold;
