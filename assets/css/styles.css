@@ -2,8 +2,11 @@ body {
     background-color: lightgrey;
     background-image: url("../images/01-02-02_background-img.jpg");
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;      /* scales to fill viewport while keeping aspect */
+    background-attachment: scroll;/* better on mobile; will scale with window */
+    min-height: 100vh;
 }
-
 
 p {
     font-weight: bold;
