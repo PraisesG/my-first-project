@@ -8,6 +8,13 @@ body {
     min-height: 100vh;
 }
 
+/* keep fixed parallax only on large desktops */
+@media (min-width: 1200px) {
+    body {
+        background-attachment: fixed;
+    }
+}
+
 p {
     font-weight: bold;
 }
